@@ -34,7 +34,7 @@ window.onload = function () {
 function data() {
     if (accessToken !== "") {
         reposUrl = "https://api.github.com/search/repositories?q=user:" + user;
-        statUrl = `https://api.github.com/users/${user}/repos?per_page=1000&type=owner`;
+        statUrl = `https://api.github.com/users/repos?per_page=1000&type=owner`;
         fetch(reposUrl, {headers})
             .then(response => response.json())
             .then(data => {
