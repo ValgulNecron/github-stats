@@ -4,9 +4,7 @@ let accessToken = "";
 let reposUrl = "";
 let statUrl = "https://api.github.com/user/repos?per_page=1000&type=owner";
 let user = "ValgulNecron"
-const headers = {
-    Authorization: `Bearer ${accessToken}`,
-};
+
 
 window.onload = function () {
     repoList = document.getElementById("repos-container");
@@ -20,6 +18,9 @@ window.onload = function () {
         if (token) {
             accessToken = token;
         }
+        const headers = {
+    Authorization: `Bearer ${accessToken}`,
+};
         repoList.innerHTML = "";
         statDiv.innerHTML = "";
         data();
