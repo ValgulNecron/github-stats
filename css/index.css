@@ -1,0 +1,43 @@
+body {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: Arial, sans-serif;
+}
+
+input[type=text], input[type=submit] {
+    background-color: #6c7086;
+    color: #cdd6f4;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #4a4e5f;
+}
+
+
+#repos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.projet {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#header {
+    padding-bottom: 20px;
+}
+
+.clickable:hover {
+    background-color: #45475a;
+}
